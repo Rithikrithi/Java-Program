@@ -1,0 +1,22 @@
+import java.util.*;
+class demo{
+    public static void main(String args[]){
+        Scanner s1 = new Scanner(System.in);
+        int a[] = new int[9];
+        System.out.println("Enter the value:");
+        for(int i=0;i<a.length;i++){
+            a[i]=s1.nextInt();
+        }
+        int ones=0;
+        int zeros=0;
+        for(int i=0;i<a.length;i++){
+          if(a[i]%2==1){
+            ones++;
+          }else{
+            zeros++;
+          }
+        }
+        System.out.println("ONES NUMBER:"+ones);
+        System.out.println("ZEROS NUMBER:"+zeros);
+    }
+}
